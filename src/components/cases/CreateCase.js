@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { createCase } from '../../store/actions/caseActions'
+import { Redirect } from 'react-router-dom'
 
 class CreateCase extends Component {
     state = {
@@ -21,6 +22,8 @@ class CreateCase extends Component {
     }
 
     render() {
+        const { auth } = this.props;
+        if (!auth.uid) return <Redirect to ='/signin' />
         return (
             <div className="container">
             <form onSubmit= {this.handleSubmit} className="white">
@@ -42,10 +45,15 @@ class CreateCase extends Component {
   }
 }
 
+const mapStateToProps = (state) => {
+    return {
+        auth: state.firebase.auth
+    }
+}
 const mapDispatchToProps = (dispatch) => {
     return {
         createCase: (file) => dispatch(createCase(file))
     }
 } 
-export default connect(null, mapDispatchToProps)(CreateCase)
+export default connect(mapStateToProps, mapDispatchToProps)(CreateCase)
 

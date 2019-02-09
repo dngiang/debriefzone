@@ -2,9 +2,12 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
+import { Redirect } from 'react-router-dom'
 
 const CaseDetails = (props) => {
-    const { file } = props;
+    const { file, auth } = props;
+    if (!auth.uid) return <Redirect to ='/signin' />
+
     if (file) {
       return (
         <div className="container section project-details">
@@ -36,7 +39,8 @@ const mapStateToProps = (state, ownProps) => {
   const cases = state.firestore.data.cases;
   const file = cases ? cases[id] : null;
   return {
-    file: file
+    file: file,
+    auth: state.firebase.auth
   }
 }
 export default compose(
