@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { signOut } from '../../store/actions/authActions'
 
-//cannot read initial
+//cannot read initials, initials props undefined
 const SignedInLinks = (props) => {
     console.log(props);
     return (

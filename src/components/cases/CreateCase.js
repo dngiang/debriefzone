@@ -19,6 +19,7 @@ class CreateCase extends Component {
         e.preventDefault();
         // console.log(this.state);
         this.props.createCase(this.state) //after dispatching state to props
+        this.props.history.push('/');
     }
 
     render() {
