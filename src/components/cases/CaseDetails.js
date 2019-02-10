@@ -6,6 +6,7 @@ import { Redirect } from 'react-router-dom'
 import moment from 'moment'
 
 const CaseDetails = (props) => {
+  console.log(props);
     const { file, auth } = props;
     if (!auth.uid) return <Redirect to ='/signin' />
 

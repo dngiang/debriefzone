@@ -1,5 +1,5 @@
 export const createCase = (file) => { //or case
-    return (dispatch, getState, { getFirebase, getFirestore }) => {
+    return (dispatch, getState, { getFirestore }) => {
         // make asyn call to db
         const firestore = getFirestore();
         const profile = getState().firebase.profile;
@@ -7,12 +7,12 @@ export const createCase = (file) => { //or case
     
         firestore.collection('cases').add({
             ...file, //spread operator
-            authorFirstName: "Dinh",
-            authorLastName: "Giang",
+            authorFirstName: "HC in",
+            authorLastName: "caseActions",
             authorId: "12345",
             createdAt: new Date()
         }).then(() => {
-            dispatch({ type: 'CREATE_FILE', file}); //or case
+            dispatch({ type: 'CREATE_FILE' }); //or file/case
         }).catch((err) => {
             dispatch({type: 'CREATE_FILE_ERROR', err});
         })

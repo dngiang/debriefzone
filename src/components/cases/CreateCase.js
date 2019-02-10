@@ -17,7 +17,6 @@ class CreateCase extends Component {
 
     handleSubmit =(e) => {
         e.preventDefault();
-        // console.log(this.state);
         this.props.createCase(this.state) //after dispatching state to props
         this.props.history.push('/');
     }
@@ -38,7 +37,7 @@ class CreateCase extends Component {
                     <textarea id="story" className="materialize-textarea" onChange={this.handleChange}></textarea>
                 </div>
                 <div className="input-field">
-                    <button className="btn pink lighen-1 z-depth-0">Create</button>
+                    <button className="btn orange darken-4 z-depth-0">Create</button>
                 </div>
             </form>
             </div>
