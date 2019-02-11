@@ -5,7 +5,8 @@ export const signIn = (credentials) => {
         firebase.auth().signInWithEmailAndPassword(
             credentials.email,
             credentials.password
-        ).then(() => {
+        ).then((resp) => {
+            console.log(resp);
             dispatch({ type: 'LOGIN_SUCCESS'});
         }).catch ((err) => {
             dispatch({ type: 'LOGIN_ERROR', err});
@@ -25,6 +26,7 @@ export const signOut = () => {
     }
 
 export const signUp = (newUser) => {
+    console.log(newUser);
     return (dispatch, getState, { getFirebase, getFirestore }) => {
         const  firebase = getFirebase();
         const firestore = getFirestore();

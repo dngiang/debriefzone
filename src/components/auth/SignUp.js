@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { signUp } from '../../store/actions/authActions'
+import '../../index.css'
 
 class SignUp extends Component {
     state = {
@@ -52,9 +53,6 @@ class SignUp extends Component {
                     </div>
                 </div>
             </form>
-            <h6 className="grey-text text-lighten">Guess Login<br/>
-            Email: guest@gmail.com<br/>
-            Password: test1234<br/></h6>
             </div>
     )
   }

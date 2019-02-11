@@ -25,8 +25,7 @@ class SignIn extends Component {
         if (auth.uid) return <Redirect to ='/' />
         return (
             <div className="container">
-            <h4 className="instructions">Welcome, ran out of team meeting time? Share your experiences, thoughts and ideas with your team members right here right now.</h4>
-            <br />
+            <h4 className="instructions">Ran out of team meeting time? Share your experiences, thoughts and ideas with your team members right here right now.</h4>
             <form onSubmit= {this.handleSubmit} className="white">
                 <h5 className="grey-text text-darken-3">Sign In</h5>
                 <div className="input-field">
@@ -44,6 +43,9 @@ class SignIn extends Component {
                     </div>
                 </div>
             </form>
+            <h6 className="grey-text text-lighten">Guess Login<br/>
+            Email: guest@gmail.com<br/>
+            Password: test1234<br/></h6>
             </div>
     )
   }

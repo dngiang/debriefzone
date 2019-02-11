@@ -6,6 +6,7 @@ import CaseDetails from './components/cases/CaseDetails'
 import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignUp'
 import CreateCase from './components/cases/CreateCase'
+// import "../src/index.css"
 
 class App extends Component {
   render() {

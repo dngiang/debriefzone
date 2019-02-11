@@ -4,7 +4,7 @@ import moment from 'moment'
 const CaseSummary = ({file}) => {
     return (
 
-    <div className="card z-depth-0 project-summary">
+    <div className="card z-depth-0 case-summary">
         <div className="card-content grey-text text-darken-3">
             <span className="card-title">{file.title}</span>
             <p>Post by {file.authorFirstName} {file.authorLastName}</p>
