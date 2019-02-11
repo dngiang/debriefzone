@@ -1,3 +1,4 @@
+//CLEAR
 export const createCase = (file) => { //or case
     return (dispatch, getState, { getFirestore }) => {
         // make asyn call to db
@@ -7,9 +8,9 @@ export const createCase = (file) => { //or case
     
         firestore.collection('cases').add({
             ...file, //spread operator
-            authorFirstName: "HC in",
-            authorLastName: "caseActions",
-            authorId: "12345",
+            authorFirstName: profile.firstName,
+            authorLastName: profile.lastName,
+            authorId: authorId,
             createdAt: new Date()
         }).then(() => {
             dispatch({ type: 'CREATE_FILE' }); //or file/case

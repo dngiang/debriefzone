@@ -43,7 +43,7 @@ class SignIn extends Component {
                     </div>
                 </div>
             </form>
-            <h6 className="grey-text text-lighten">Guess Login<br/>
+            <h6 className="grey-text text-darken-2">Guess Login<br/>
             Email: guest@gmail.com<br/>
             Password: test1234<br/></h6>
             </div>

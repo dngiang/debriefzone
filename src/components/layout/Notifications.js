@@ -2,6 +2,7 @@ import React from 'react'
 import moment from 'moment'
 
 const Notifications = (props) => {
+    console.log(props);
     const {notifications} = props;
     return (
         <div className="section">

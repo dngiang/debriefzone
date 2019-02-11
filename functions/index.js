@@ -13,10 +13,9 @@ exports.caseCreated = functions.firestore
 .onCreate(doc => {
 
     const file = doc.data();
-    console.log(file);
     const notification = {
         content: 'Added a new case',
-        user: `${file.authorFirstName} ${file.authorLastName}`, //hard coding for now, need to trouble shoot for profile
+        user: `${file.authorFirstName} ${file.authorLastName}`,
         time: admin.firestore.FieldValue.serverTimestamp()
     }
 
@@ -37,6 +36,6 @@ exports.userJoined = functions.auth.user()
         }
 
         return createNotification(notification);
-    })
+    });
 
-})
+});

@@ -1,3 +1,4 @@
+//CLEAR, MATCHED
 import React from 'react'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
@@ -12,7 +13,7 @@ const CaseDetails = (props) => {
 
     if (file) {
       return (
-        <div className="container section project-details">
+        <div className="container section case-details">
           <div className="card z-depth-0 center">
             <div className="class-content">
                 <span className="card-title">{ file.title }</span>
