@@ -1,4 +1,3 @@
-//NACK BUTTON
 import React from 'react'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
@@ -13,12 +12,11 @@ const CaseDetails = (props) => {
     if (file) {
       return (
         <div className="container section case-details">
-          <div className="card z-depth-0 center">
+          <div className="card z-depth-0">
             <div className="class-content">
                 <span className="card-title">{ file.title }</span>
                 <p>{ file.story }</p>
             </div>
-            {/* <button onClick={<Redirect to='/'/>} className="btn orange darken-4" >Back</button> */}
             <div className="card-action grey lighten-4 grey-text">
                 <div>Posted by {file.authorFirstName} {file.authorLastName}</div>
                 <div>{moment(file.createdAt.toDate()).calendar()}</div>
@@ -29,12 +27,10 @@ const CaseDetails = (props) => {
     } else {
   return (
     <div className="container center">
-    <p>Loading case...</p>
+      <p>Loading case...</p>
     </div>
     )
-    
   }
-
 }
 
 const mapStateToProps = (state, ownProps) => {
@@ -50,5 +46,4 @@ export default compose(
   connect(mapStateToProps),
   firestoreConnect([
     { collection: 'cases'}
-  ])
-)(CaseDetails)
+  ]))(CaseDetails)

@@ -1,6 +1,6 @@
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth';
+import firebase from 'firebase/app'
+import 'firebase/firestore'
+import 'firebase/auth'
 
  // Initialize Firebase
  var config = {
@@ -11,7 +11,7 @@ import 'firebase/auth';
   storageBucket: "debrief-zone.appspot.com",
   messagingSenderId: "303204094038"
 };
+
 firebase.initializeApp(config);
-firebase.firestore().settings({ timestampsInSnapshots: true });
 
 export default firebase;

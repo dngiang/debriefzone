@@ -2,7 +2,6 @@ import React from 'react'
 import moment from 'moment'
 
 const Notifications = (props) => {
-    console.log(props);
     const {notifications} = props;
     return (
         <div className="section">
@@ -12,17 +11,16 @@ const Notifications = (props) => {
                     <ul className="logged-user">
                         {notifications && notifications.map(news => {
                             return <li key={news.id}>
-                                    <span className="orange-text">{news.user} </span> 
-                                    <span>{news.content}</span>
-                                    <div className="grey-text note-date">
-                                        {moment(news.time.toDate()).fromNow()}
-                                    </div>
-                                </li>
-                        })}
+                                        <span className="orange-text">{news.user} </span> 
+                                        <span>{news.content}</span>
+                                        <div className="grey-text note-date">
+                                            {moment(news.time.toDate()).fromNow()}
+                                        </div>
+                                    </li>
+                            })}
                     </ul>
                 </div>
             </div>
-           
         </div>
     )
 }

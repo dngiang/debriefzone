@@ -1,4 +1,3 @@
-//CLEAR
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { createCase } from '../../store/actions/caseActions'
@@ -18,10 +17,9 @@ class CreateCase extends Component {
 
     handleSubmit =(e) => {
         e.preventDefault();
-        this.props.createCase(this.state) //after dispatching state to props
+        this.props.createCase(this.state)
         this.props.history.push('/');
     }
-
 
     render() {
         const { auth } = this.props;
@@ -52,10 +50,12 @@ const mapStateToProps = (state) => {
         auth: state.firebase.auth
     }
 }
+
 const mapDispatchToProps = (dispatch) => {
     return {
         createCase: (file) => dispatch(createCase(file))
     }
 } 
+
 export default connect(mapStateToProps, mapDispatchToProps)(CreateCase)
 

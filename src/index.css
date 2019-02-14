@@ -1,9 +1,10 @@
-/* -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif */
+* {
+    box-sizing: border-box;
+}
+
 html{
   min-height: 100%;
 }
-
 
 body {
   margin: 0;
@@ -15,12 +16,45 @@ body {
 }
 
 form {
-  padding: 20px;
-  margin-top: 60px;
-  margin-left: -5px;
-  margin-right: -5px;
+    margin-top: 5px;
+    margin-left: 10x;
+    margin-right: 10px;
+  }
+
+.instructions {
+    font-size: 30px;
 }
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
+nav ul a {
+    padding: 0 12px;
+    font-size: .9rem;
+    margin-right: -18px;
+}
+a.brand-logo {
+    text-align: left;
+    font-size: 20px;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+        max-width: 1400px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body {
+        max-width: 1600px;
+    }
+}

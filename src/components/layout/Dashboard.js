@@ -32,10 +32,11 @@ const mapStateToProps = (state) => {
         notifications: state.firestore.ordered.notifications
     }
 }
+
+ //Connecting to firestore online
 export default compose(
     connect(mapStateToProps),
     firestoreConnect([
         { collection: 'cases', orderBy: ['createdAt','desc']},
         { collection: 'notifications', limit: 5, orderBy: ['time','desc']}
-    ])
-)(Dashboard) //connecting to firestore online
+    ]))(Dashboard)
