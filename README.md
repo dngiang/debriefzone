@@ -8,7 +8,7 @@
 
 ## About
 
-As a former researcher myself, I often find the team meeting time we had not long enough for every member to share about our projects, the ups and downs, and ask for advices. I created this "Debrief Zone" app in hoping to provide a virtual environment for team members to continue sharing after the meeting. That way, everyone is included and everyone voices are being heard. 
+As a former researcher myself, I often find the team meeting time we had not long enough for every member to share. I created this "Debrief Zone" app in hope to provide a virtual environment for team members to continue sharing after the meeting. That way, everyone is included and everyone voices are being heard. 
 
 ## Screenshots
 <p>
