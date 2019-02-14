@@ -1,7 +1,10 @@
+//REMOVE BUTTON
 import React from 'react'
 import moment from 'moment'
 
+
 const CaseSummary = ({file}) => {
+    
     return (
 
     <div className="card z-depth-0 case-summary">
@@ -10,6 +13,9 @@ const CaseSummary = ({file}) => {
             <p>Post by {file.authorFirstName} {file.authorLastName}</p>
             <p className="grey-text">{moment(file.createdAt.toDate()).calendar()}</p>
         </div>
+
+        {/* <button onClick={()=>{delCase(file.id)}} className="btn orange darken-4">Delete</button> */}
+        {/* <button className="btn orange darken-4">Remove</button> */}
     </div>
     )
 }

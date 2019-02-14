@@ -1,4 +1,4 @@
-//CLEAR, MATCHED
+//NACK BUTTON
 import React from 'react'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
@@ -7,7 +7,6 @@ import { Redirect } from 'react-router-dom'
 import moment from 'moment'
 
 const CaseDetails = (props) => {
-  console.log(props);
     const { file, auth } = props;
     if (!auth.uid) return <Redirect to ='/signin' />
 
@@ -19,6 +18,7 @@ const CaseDetails = (props) => {
                 <span className="card-title">{ file.title }</span>
                 <p>{ file.story }</p>
             </div>
+            {/* <button onClick={<Redirect to='/'/>} className="btn orange darken-4" >Back</button> */}
             <div className="card-action grey lighten-4 grey-text">
                 <div>Posted by {file.authorFirstName} {file.authorLastName}</div>
                 <div>{moment(file.createdAt.toDate()).calendar()}</div>

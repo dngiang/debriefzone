@@ -5,8 +5,21 @@ import Dashboard from './components/layout/Dashboard'
 import CaseDetails from './components/cases/CaseDetails'
 import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignUp'
+// import CaseSummary from './components/cases/CaseSummary'
 import CreateCase from './components/cases/CreateCase'
-// import "../src/index.css"
+import CaseList from './components/cases/CaseList'
+
+
+// // pass delFile into CaseList and into CaseSummary
+// delFile = (id) => {
+//   // console.log(id);
+//   let files = this.state.files.filter(file => {
+//     return file.id !== id
+//   });
+//   this.setState({
+//     files:files
+//   })
+// }
 
 class App extends Component {
   render() {
@@ -20,8 +33,7 @@ class App extends Component {
             <Route path='/signin' component={SignIn} />
             <Route path='/signup' component={SignUp} />
             <Route path='/create' component={CreateCase} />
-            
-
+            <Route path='/' component={CaseList}/>
           </Switch>
         </div>
       </BrowserRouter>

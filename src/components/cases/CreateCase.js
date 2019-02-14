@@ -22,6 +22,7 @@ class CreateCase extends Component {
         this.props.history.push('/');
     }
 
+
     render() {
         const { auth } = this.props;
         if (!auth.uid) return <Redirect to ='/signin' />
