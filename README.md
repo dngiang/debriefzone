@@ -14,17 +14,17 @@ As a former researcher myself, I often find the team meeting time we had not lon
 <p>
     Create an account and let's get started! A good year is ahead of you.
 </p>
-<img align="center" src="https://github.com/dngiang/lets-goal/blob/master/img/LandingPage.jpg" alt="Landing Page"  height=400 width=800>
+<img align="center" src="" alt="Landing Page"  height=400 width=800>
 
 <p>
     Take a look at your goals daily to remind yourself what you want to achieve.
 </p>
-<img align="center" src="https://github.com/dngiang/lets-goal/blob/master/img/DetailsPage.jpg" alt="Details Page" height=250 width=400>
+<img align="center" src="" alt="Details Page" height=250 width=400>
 
 <p>
     Keep up the progress and update them daily!
 </p>
-<img align="center" src="https://github.com/dngiang/lets-goal/blob/master/img/EditPage.jpg" alt="Edit Page" height=250 width=400>
+<img align="center" src="" alt="Edit Page" height=250 width=400>
    
 ## Tech Stack
 
