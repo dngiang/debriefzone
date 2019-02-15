@@ -34,7 +34,7 @@ As a former researcher myself, I often find the team meeting time we had not lon
   <li>Enzyme</li>
   <li>Firebase</li>
   <li>moment</li>
-  <li>Materialize UI<li>
+  <li>Materialize UI</li>
   <li>Travis CI</li>
   <li>Github</li>
 </ul>
