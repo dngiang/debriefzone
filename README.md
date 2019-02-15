@@ -22,11 +22,6 @@ As a former researcher myself, I often find the team meeting time we had not lon
 <img align="center" src="https://github.com/dngiang/debriefzone/blob/master/public/img/DZ_Dashboard.png" alt="Dashboard"  height=400 width=800>
 
 <p>
-    Create your own case and share with your teammates.
-</p>
-<img align="center" src="https://github.com/dngiang/debriefzone/blob/master/public/img/DZ_CreateCase.png" alt="Create Case" height=250 width=400>
-
-<p>
     See the latest updates!
 </p>
 <img align="center" src="https://github.com/dngiang/debriefzone/blob/master/public/img/DZ_Notifications.png" alt="Notification" height=250 width=400>
