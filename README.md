@@ -12,19 +12,24 @@ As a former researcher myself, I often find the team meeting time we had not lon
 
 ## Screenshots
 <p>
-    Create an account and let's get started! A good year is ahead of you.
+    Login Page
 </p>
-<img align="center" src="" alt="Landing Page"  height=400 width=800>
+<img align="center" src="https://github.com/dngiang/debriefzone/blob/master/public/img/DZ_LogIn.png" alt="Log In"  height=400 width=800>
 
 <p>
-    Take a look at your goals daily to remind yourself what you want to achieve.
+    Overall view of the Dashboard including cases and users.
 </p>
-<img align="center" src="" alt="Details Page" height=250 width=400>
+<img align="center" src="https://github.com/dngiang/debriefzone/blob/master/public/img/DZ_Dashboard.png" alt="Dashboard"  height=400 width=800>
 
 <p>
-    Keep up the progress and update them daily!
+    Create your own case and share with your teammates.
 </p>
-<img align="center" src="" alt="Edit Page" height=250 width=400>
+<img align="center" src="https://github.com/dngiang/debriefzone/blob/master/public/img/DZ_CreateCase.png" alt="Create Case" height=250 width=400>
+
+<p>
+    See the latest updates!
+</p>
+<img align="center" src="https://github.com/dngiang/debriefzone/blob/master/public/img/DZ_Notifications.png" alt="Notification" height=250 width=400>
    
 ## Tech Stack
 
