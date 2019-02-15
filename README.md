@@ -8,11 +8,11 @@
 
 ## About
 
-As a former researcher myself, I often find the team meeting time we had not long enough for every member to share. I created this "Debrief Zone" app in hope to provide a virtual environment for team members to continue sharing after the meeting. That way, everyone is included and everyone voices are being heard. 
+As a former researcher myself, I often find the team meeting time we had not long enough for every member to share. I created this "Debrief Zone" app using React in hope to provide a virtual environment for team members to continue sharing after the meeting. That way, everyone is included and everyone voices are being heard. 
 
 ## Screenshots
 <p>
-    Login Page
+    Login Page and guest account is provided
 </p>
 <img align="center" src="https://github.com/dngiang/debriefzone/blob/master/public/img/DZ_LogIn.png" alt="Log In"  height=400 width=800>
 
@@ -22,7 +22,7 @@ As a former researcher myself, I often find the team meeting time we had not lon
 <img align="center" src="https://github.com/dngiang/debriefzone/blob/master/public/img/DZ_Dashboard.png" alt="Dashboard"  height=400 width=800>
 
 <p>
-    See the latest updates!
+    See the latest updates and activities of other members!
 </p>
 <img align="center" src="https://github.com/dngiang/debriefzone/blob/master/public/img/DZ_Notifications.png" alt="Notification" height=250 width=400>
    
@@ -34,6 +34,7 @@ As a former researcher myself, I often find the team meeting time we had not lon
   <li>Enzyme</li>
   <li>Firebase</li>
   <li>moment</li>
+  <li>Materialize UI<li>
   <li>Travis CI</li>
   <li>Github</li>
 </ul>
