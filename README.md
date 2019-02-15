@@ -1,4 +1,4 @@
-<h1 align=center>Debrief Zone</h1>
+<h1 align=center style="color: orange">Debrief Zone</h1>
 
 <h2 align="center"> Create. Share. Follow-Up.
 </h2>
